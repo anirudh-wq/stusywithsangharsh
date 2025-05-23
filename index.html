@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Welcome to Your Cool Site</title>
+<style>
+  /* Reset some default styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7fc;
+    color: #333;
+  }
+
+  header {
+    background: linear-gradient(90deg, #007bff, #0056d6);
+    color: white;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  header h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 1.5rem;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #ffdd57;
+  }
+
+  .hero {
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 0 1.5rem;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.5);
+  }
+
+  .hero h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+  }
+
+  .btn-primary {
+    background-color: #ffdd57;
+    color: #222;
+    padding: 0.85rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255,221,87,0.5);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: center;
+    text-transform: uppercase;
+  }
+
+  .btn-primary:hover {
+    background-color: #ffc107;
+    transform: scale(1.05);
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 2rem;
+    padding: 3rem 2rem;
+    background: white;
+  }
+
+  .feature-item {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .feature-item:hover {
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  }
+
+  .feature-icon {
+    font-size: 2.8rem;
+    margin-bottom: 1.2rem;
+    color: #007bff;
+  }
+
+  .feature-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+  }
+
+  .feature-description {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  footer {
+    background-color: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+
+  @media (max-width: 600px) {
+    .hero h2 {
+      font-size: 2.2rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>CoolSite</h1>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#get-started">Get Started</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" role="banner">
+  <h2>Build Something Amazing Today</h2>
+  <p>Discover tools and resources that help you create modern, engaging websites with ease.</p>
+  <button class="btn-primary" onclick="alert('Getting Started!')">Get Started</button>
+</section>
+
+<section id="features" class="features" aria-label="Features Section">
+  <div class="feature-item" tabindex="0">
+    <div class="feature-icon">🚀</div>
+    <h3 class="feature-title">Fast Performance</h3>
+    <p class="feature-description">Optimized for speed and efficiency to deliver smooth user experiences.</p>
+  </div>
+  <div class="feature-item" tabindex="0">
+    <div class="feature-icon">🎨</div>
+    <h3 class="feature-title">Modern Design</h3>
+    <p class="feature-description">Beautiful and responsive layouts that adapt perfectly to all devices.</p>
+  </div>
+  <div class="feature-item" tabindex="0">
+    <div class="feature-icon">⚙️</div>
+    <h3 class="feature-title">Easy Customization</h3>
+    <p class="feature-description">Flexible and maintainable codebase makes it simple to scale and modify.</p>
+  </div>
+</section>
+
+<footer id="contact">
+  &copy; 2024 CoolSite. Crafted with ❤️ for developers and designers.
+</footer>
+
+</body>
+</html>
+
